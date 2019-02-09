@@ -10,3 +10,6 @@ Daniela Calderón Pérez
 
 **Ayud. Lab.**
 Jonathan Barragán Jiménez
+
+Alumno
+Erika Lizbeth Hernándes Morales

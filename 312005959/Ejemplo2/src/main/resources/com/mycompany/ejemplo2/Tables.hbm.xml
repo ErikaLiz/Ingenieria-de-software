@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Tables" table="tables" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.TablesId">
+            <key-property name="tableCatalog" type="serializable">
+                <column name="table_catalog" />
+            </key-property>
+            <key-property name="tableSchema" type="serializable">
+                <column name="table_schema" />
+            </key-property>
+            <key-property name="tableName" type="serializable">
+                <column name="table_name" />
+            </key-property>
+            <key-property name="tableType" type="serializable">
+                <column name="table_type" />
+            </key-property>
+            <key-property name="selfReferencingColumnName" type="serializable">
+                <column name="self_referencing_column_name" />
+            </key-property>
+            <key-property name="referenceGeneration" type="serializable">
+                <column name="reference_generation" />
+            </key-property>
+            <key-property name="userDefinedTypeCatalog" type="serializable">
+                <column name="user_defined_type_catalog" />
+            </key-property>
+            <key-property name="userDefinedTypeSchema" type="serializable">
+                <column name="user_defined_type_schema" />
+            </key-property>
+            <key-property name="userDefinedTypeName" type="serializable">
+                <column name="user_defined_type_name" />
+            </key-property>
+            <key-property name="isInsertableInto" type="serializable">
+                <column name="is_insertable_into" />
+            </key-property>
+            <key-property name="isTyped" type="serializable">
+                <column name="is_typed" />
+            </key-property>
+            <key-property name="commitAction" type="serializable">
+                <column name="commit_action" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

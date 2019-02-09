@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.AdministrableRoleAuthorizations" table="administrable_role_authorizations" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.AdministrableRoleAuthorizationsId">
+            <key-property name="grantee" type="serializable">
+                <column name="grantee" />
+            </key-property>
+            <key-property name="roleName" type="serializable">
+                <column name="role_name" />
+            </key-property>
+            <key-property name="isGrantable" type="serializable">
+                <column name="is_grantable" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

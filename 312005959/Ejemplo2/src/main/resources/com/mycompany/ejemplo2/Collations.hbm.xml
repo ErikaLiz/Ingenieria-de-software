@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Collations" table="collations" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.CollationsId">
+            <key-property name="collationCatalog" type="serializable">
+                <column name="collation_catalog" />
+            </key-property>
+            <key-property name="collationSchema" type="serializable">
+                <column name="collation_schema" />
+            </key-property>
+            <key-property name="collationName" type="serializable">
+                <column name="collation_name" />
+            </key-property>
+            <key-property name="padAttribute" type="serializable">
+                <column name="pad_attribute" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

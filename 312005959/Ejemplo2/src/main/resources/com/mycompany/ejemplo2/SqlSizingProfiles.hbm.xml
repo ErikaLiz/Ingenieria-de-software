@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.SqlSizingProfiles" table="sql_sizing_profiles" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.SqlSizingProfilesId">
+            <key-property name="sizingId" type="serializable">
+                <column name="sizing_id" />
+            </key-property>
+            <key-property name="sizingName" type="serializable">
+                <column name="sizing_name" />
+            </key-property>
+            <key-property name="profileId" type="serializable">
+                <column name="profile_id" />
+            </key-property>
+            <key-property name="requiredValue" type="serializable">
+                <column name="required_value" />
+            </key-property>
+            <key-property name="comments" type="serializable">
+                <column name="comments" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

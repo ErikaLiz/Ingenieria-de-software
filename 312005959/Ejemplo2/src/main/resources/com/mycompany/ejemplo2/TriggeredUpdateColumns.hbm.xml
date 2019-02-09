@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.TriggeredUpdateColumns" table="triggered_update_columns" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.TriggeredUpdateColumnsId">
+            <key-property name="triggerCatalog" type="serializable">
+                <column name="trigger_catalog" />
+            </key-property>
+            <key-property name="triggerSchema" type="serializable">
+                <column name="trigger_schema" />
+            </key-property>
+            <key-property name="triggerName" type="serializable">
+                <column name="trigger_name" />
+            </key-property>
+            <key-property name="eventObjectCatalog" type="serializable">
+                <column name="event_object_catalog" />
+            </key-property>
+            <key-property name="eventObjectSchema" type="serializable">
+                <column name="event_object_schema" />
+            </key-property>
+            <key-property name="eventObjectTable" type="serializable">
+                <column name="event_object_table" />
+            </key-property>
+            <key-property name="eventObjectColumn" type="serializable">
+                <column name="event_object_column" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

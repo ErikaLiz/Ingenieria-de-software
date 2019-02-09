@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Views" table="views" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.ViewsId">
+            <key-property name="tableCatalog" type="serializable">
+                <column name="table_catalog" />
+            </key-property>
+            <key-property name="tableSchema" type="serializable">
+                <column name="table_schema" />
+            </key-property>
+            <key-property name="tableName" type="serializable">
+                <column name="table_name" />
+            </key-property>
+            <key-property name="viewDefinition" type="serializable">
+                <column name="view_definition" />
+            </key-property>
+            <key-property name="checkOption" type="serializable">
+                <column name="check_option" />
+            </key-property>
+            <key-property name="isUpdatable" type="serializable">
+                <column name="is_updatable" />
+            </key-property>
+            <key-property name="isInsertableInto" type="serializable">
+                <column name="is_insertable_into" />
+            </key-property>
+            <key-property name="isTriggerUpdatable" type="serializable">
+                <column name="is_trigger_updatable" />
+            </key-property>
+            <key-property name="isTriggerDeletable" type="serializable">
+                <column name="is_trigger_deletable" />
+            </key-property>
+            <key-property name="isTriggerInsertableInto" type="serializable">
+                <column name="is_trigger_insertable_into" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

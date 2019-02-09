@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Sequences" table="sequences" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.SequencesId">
+            <key-property name="sequenceCatalog" type="serializable">
+                <column name="sequence_catalog" />
+            </key-property>
+            <key-property name="sequenceSchema" type="serializable">
+                <column name="sequence_schema" />
+            </key-property>
+            <key-property name="sequenceName" type="serializable">
+                <column name="sequence_name" />
+            </key-property>
+            <key-property name="dataType" type="serializable">
+                <column name="data_type" />
+            </key-property>
+            <key-property name="numericPrecision" type="serializable">
+                <column name="numeric_precision" />
+            </key-property>
+            <key-property name="numericPrecisionRadix" type="serializable">
+                <column name="numeric_precision_radix" />
+            </key-property>
+            <key-property name="numericScale" type="serializable">
+                <column name="numeric_scale" />
+            </key-property>
+            <key-property name="startValue" type="serializable">
+                <column name="start_value" />
+            </key-property>
+            <key-property name="minimumValue" type="serializable">
+                <column name="minimum_value" />
+            </key-property>
+            <key-property name="maximumValue" type="serializable">
+                <column name="maximum_value" />
+            </key-property>
+            <key-property name="increment" type="serializable">
+                <column name="increment" />
+            </key-property>
+            <key-property name="cycleOption" type="serializable">
+                <column name="cycle_option" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

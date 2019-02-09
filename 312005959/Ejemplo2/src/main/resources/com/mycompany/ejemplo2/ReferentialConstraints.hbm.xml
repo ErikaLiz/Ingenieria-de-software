@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.ReferentialConstraints" table="referential_constraints" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.ReferentialConstraintsId">
+            <key-property name="constraintCatalog" type="serializable">
+                <column name="constraint_catalog" />
+            </key-property>
+            <key-property name="constraintSchema" type="serializable">
+                <column name="constraint_schema" />
+            </key-property>
+            <key-property name="constraintName" type="serializable">
+                <column name="constraint_name" />
+            </key-property>
+            <key-property name="uniqueConstraintCatalog" type="serializable">
+                <column name="unique_constraint_catalog" />
+            </key-property>
+            <key-property name="uniqueConstraintSchema" type="serializable">
+                <column name="unique_constraint_schema" />
+            </key-property>
+            <key-property name="uniqueConstraintName" type="serializable">
+                <column name="unique_constraint_name" />
+            </key-property>
+            <key-property name="matchOption" type="serializable">
+                <column name="match_option" />
+            </key-property>
+            <key-property name="updateRule" type="serializable">
+                <column name="update_rule" />
+            </key-property>
+            <key-property name="deleteRule" type="serializable">
+                <column name="delete_rule" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

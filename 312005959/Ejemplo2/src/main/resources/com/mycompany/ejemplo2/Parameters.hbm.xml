@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Parameters" table="parameters" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.ParametersId">
+            <key-property name="specificCatalog" type="serializable">
+                <column name="specific_catalog" />
+            </key-property>
+            <key-property name="specificSchema" type="serializable">
+                <column name="specific_schema" />
+            </key-property>
+            <key-property name="specificName" type="serializable">
+                <column name="specific_name" />
+            </key-property>
+            <key-property name="ordinalPosition" type="serializable">
+                <column name="ordinal_position" />
+            </key-property>
+            <key-property name="parameterMode" type="serializable">
+                <column name="parameter_mode" />
+            </key-property>
+            <key-property name="isResult" type="serializable">
+                <column name="is_result" />
+            </key-property>
+            <key-property name="asLocator" type="serializable">
+                <column name="as_locator" />
+            </key-property>
+            <key-property name="parameterName" type="serializable">
+                <column name="parameter_name" />
+            </key-property>
+            <key-property name="dataType" type="serializable">
+                <column name="data_type" />
+            </key-property>
+            <key-property name="characterMaximumLength" type="serializable">
+                <column name="character_maximum_length" />
+            </key-property>
+            <key-property name="characterOctetLength" type="serializable">
+                <column name="character_octet_length" />
+            </key-property>
+            <key-property name="characterSetCatalog" type="serializable">
+                <column name="character_set_catalog" />
+            </key-property>
+            <key-property name="characterSetSchema" type="serializable">
+                <column name="character_set_schema" />
+            </key-property>
+            <key-property name="characterSetName" type="serializable">
+                <column name="character_set_name" />
+            </key-property>
+            <key-property name="collationCatalog" type="serializable">
+                <column name="collation_catalog" />
+            </key-property>
+            <key-property name="collationSchema" type="serializable">
+                <column name="collation_schema" />
+            </key-property>
+            <key-property name="collationName" type="serializable">
+                <column name="collation_name" />
+            </key-property>
+            <key-property name="numericPrecision" type="serializable">
+                <column name="numeric_precision" />
+            </key-property>
+            <key-property name="numericPrecisionRadix" type="serializable">
+                <column name="numeric_precision_radix" />
+            </key-property>
+            <key-property name="numericScale" type="serializable">
+                <column name="numeric_scale" />
+            </key-property>
+            <key-property name="datetimePrecision" type="serializable">
+                <column name="datetime_precision" />
+            </key-property>
+            <key-property name="intervalType" type="serializable">
+                <column name="interval_type" />
+            </key-property>
+            <key-property name="intervalPrecision" type="serializable">
+                <column name="interval_precision" />
+            </key-property>
+            <key-property name="udtCatalog" type="serializable">
+                <column name="udt_catalog" />
+            </key-property>
+            <key-property name="udtSchema" type="serializable">
+                <column name="udt_schema" />
+            </key-property>
+            <key-property name="udtName" type="serializable">
+                <column name="udt_name" />
+            </key-property>
+            <key-property name="scopeCatalog" type="serializable">
+                <column name="scope_catalog" />
+            </key-property>
+            <key-property name="scopeSchema" type="serializable">
+                <column name="scope_schema" />
+            </key-property>
+            <key-property name="scopeName" type="serializable">
+                <column name="scope_name" />
+            </key-property>
+            <key-property name="maximumCardinality" type="serializable">
+                <column name="maximum_cardinality" />
+            </key-property>
+            <key-property name="dtdIdentifier" type="serializable">
+                <column name="dtd_identifier" />
+            </key-property>
+            <key-property name="parameterDefault" type="serializable">
+                <column name="parameter_default" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

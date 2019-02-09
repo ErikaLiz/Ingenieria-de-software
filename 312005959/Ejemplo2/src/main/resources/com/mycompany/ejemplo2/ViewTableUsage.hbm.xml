@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.ViewTableUsage" table="view_table_usage" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.ViewTableUsageId">
+            <key-property name="viewCatalog" type="serializable">
+                <column name="view_catalog" />
+            </key-property>
+            <key-property name="viewSchema" type="serializable">
+                <column name="view_schema" />
+            </key-property>
+            <key-property name="viewName" type="serializable">
+                <column name="view_name" />
+            </key-property>
+            <key-property name="tableCatalog" type="serializable">
+                <column name="table_catalog" />
+            </key-property>
+            <key-property name="tableSchema" type="serializable">
+                <column name="table_schema" />
+            </key-property>
+            <key-property name="tableName" type="serializable">
+                <column name="table_name" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

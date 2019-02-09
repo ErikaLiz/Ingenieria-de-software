@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Transforms" table="transforms" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.TransformsId">
+            <key-property name="udtCatalog" type="serializable">
+                <column name="udt_catalog" />
+            </key-property>
+            <key-property name="udtSchema" type="serializable">
+                <column name="udt_schema" />
+            </key-property>
+            <key-property name="udtName" type="serializable">
+                <column name="udt_name" />
+            </key-property>
+            <key-property name="specificCatalog" type="serializable">
+                <column name="specific_catalog" />
+            </key-property>
+            <key-property name="specificSchema" type="serializable">
+                <column name="specific_schema" />
+            </key-property>
+            <key-property name="specificName" type="serializable">
+                <column name="specific_name" />
+            </key-property>
+            <key-property name="groupName" type="serializable">
+                <column name="group_name" />
+            </key-property>
+            <key-property name="transformType" type="serializable">
+                <column name="transform_type" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

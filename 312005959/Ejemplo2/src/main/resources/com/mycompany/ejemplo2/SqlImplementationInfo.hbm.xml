@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.SqlImplementationInfo" table="sql_implementation_info" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.SqlImplementationInfoId">
+            <key-property name="implementationInfoId" type="serializable">
+                <column name="implementation_info_id" />
+            </key-property>
+            <key-property name="implementationInfoName" type="serializable">
+                <column name="implementation_info_name" />
+            </key-property>
+            <key-property name="integerValue" type="serializable">
+                <column name="integer_value" />
+            </key-property>
+            <key-property name="characterValue" type="serializable">
+                <column name="character_value" />
+            </key-property>
+            <key-property name="comments" type="serializable">
+                <column name="comments" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

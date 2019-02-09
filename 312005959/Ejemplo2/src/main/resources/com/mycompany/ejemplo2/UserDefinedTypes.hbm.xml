@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.UserDefinedTypes" table="user_defined_types" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.UserDefinedTypesId">
+            <key-property name="userDefinedTypeCatalog" type="serializable">
+                <column name="user_defined_type_catalog" />
+            </key-property>
+            <key-property name="userDefinedTypeSchema" type="serializable">
+                <column name="user_defined_type_schema" />
+            </key-property>
+            <key-property name="userDefinedTypeName" type="serializable">
+                <column name="user_defined_type_name" />
+            </key-property>
+            <key-property name="userDefinedTypeCategory" type="serializable">
+                <column name="user_defined_type_category" />
+            </key-property>
+            <key-property name="isInstantiable" type="serializable">
+                <column name="is_instantiable" />
+            </key-property>
+            <key-property name="isFinal" type="serializable">
+                <column name="is_final" />
+            </key-property>
+            <key-property name="orderingForm" type="serializable">
+                <column name="ordering_form" />
+            </key-property>
+            <key-property name="orderingCategory" type="serializable">
+                <column name="ordering_category" />
+            </key-property>
+            <key-property name="orderingRoutineCatalog" type="serializable">
+                <column name="ordering_routine_catalog" />
+            </key-property>
+            <key-property name="orderingRoutineSchema" type="serializable">
+                <column name="ordering_routine_schema" />
+            </key-property>
+            <key-property name="orderingRoutineName" type="serializable">
+                <column name="ordering_routine_name" />
+            </key-property>
+            <key-property name="referenceType" type="serializable">
+                <column name="reference_type" />
+            </key-property>
+            <key-property name="dataType" type="serializable">
+                <column name="data_type" />
+            </key-property>
+            <key-property name="characterMaximumLength" type="serializable">
+                <column name="character_maximum_length" />
+            </key-property>
+            <key-property name="characterOctetLength" type="serializable">
+                <column name="character_octet_length" />
+            </key-property>
+            <key-property name="characterSetCatalog" type="serializable">
+                <column name="character_set_catalog" />
+            </key-property>
+            <key-property name="characterSetSchema" type="serializable">
+                <column name="character_set_schema" />
+            </key-property>
+            <key-property name="characterSetName" type="serializable">
+                <column name="character_set_name" />
+            </key-property>
+            <key-property name="collationCatalog" type="serializable">
+                <column name="collation_catalog" />
+            </key-property>
+            <key-property name="collationSchema" type="serializable">
+                <column name="collation_schema" />
+            </key-property>
+            <key-property name="collationName" type="serializable">
+                <column name="collation_name" />
+            </key-property>
+            <key-property name="numericPrecision" type="serializable">
+                <column name="numeric_precision" />
+            </key-property>
+            <key-property name="numericPrecisionRadix" type="serializable">
+                <column name="numeric_precision_radix" />
+            </key-property>
+            <key-property name="numericScale" type="serializable">
+                <column name="numeric_scale" />
+            </key-property>
+            <key-property name="datetimePrecision" type="serializable">
+                <column name="datetime_precision" />
+            </key-property>
+            <key-property name="intervalType" type="serializable">
+                <column name="interval_type" />
+            </key-property>
+            <key-property name="intervalPrecision" type="serializable">
+                <column name="interval_precision" />
+            </key-property>
+            <key-property name="sourceDtdIdentifier" type="serializable">
+                <column name="source_dtd_identifier" />
+            </key-property>
+            <key-property name="refDtdIdentifier" type="serializable">
+                <column name="ref_dtd_identifier" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

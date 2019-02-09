@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Routines" table="routines" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.RoutinesId">
+            <key-property name="specificCatalog" type="serializable">
+                <column name="specific_catalog" />
+            </key-property>
+            <key-property name="specificSchema" type="serializable">
+                <column name="specific_schema" />
+            </key-property>
+            <key-property name="specificName" type="serializable">
+                <column name="specific_name" />
+            </key-property>
+            <key-property name="routineCatalog" type="serializable">
+                <column name="routine_catalog" />
+            </key-property>
+            <key-property name="routineSchema" type="serializable">
+                <column name="routine_schema" />
+            </key-property>
+            <key-property name="routineName" type="serializable">
+                <column name="routine_name" />
+            </key-property>
+            <key-property name="routineType" type="serializable">
+                <column name="routine_type" />
+            </key-property>
+            <key-property name="moduleCatalog" type="serializable">
+                <column name="module_catalog" />
+            </key-property>
+            <key-property name="moduleSchema" type="serializable">
+                <column name="module_schema" />
+            </key-property>
+            <key-property name="moduleName" type="serializable">
+                <column name="module_name" />
+            </key-property>
+            <key-property name="udtCatalog" type="serializable">
+                <column name="udt_catalog" />
+            </key-property>
+            <key-property name="udtSchema" type="serializable">
+                <column name="udt_schema" />
+            </key-property>
+            <key-property name="udtName" type="serializable">
+                <column name="udt_name" />
+            </key-property>
+            <key-property name="dataType" type="serializable">
+                <column name="data_type" />
+            </key-property>
+            <key-property name="characterMaximumLength" type="serializable">
+                <column name="character_maximum_length" />
+            </key-property>
+            <key-property name="characterOctetLength" type="serializable">
+                <column name="character_octet_length" />
+            </key-property>
+            <key-property name="characterSetCatalog" type="serializable">
+                <column name="character_set_catalog" />
+            </key-property>
+            <key-property name="characterSetSchema" type="serializable">
+                <column name="character_set_schema" />
+            </key-property>
+            <key-property name="characterSetName" type="serializable">
+                <column name="character_set_name" />
+            </key-property>
+            <key-property name="collationCatalog" type="serializable">
+                <column name="collation_catalog" />
+            </key-property>
+            <key-property name="collationSchema" type="serializable">
+                <column name="collation_schema" />
+            </key-property>
+            <key-property name="collationName" type="serializable">
+                <column name="collation_name" />
+            </key-property>
+            <key-property name="numericPrecision" type="serializable">
+                <column name="numeric_precision" />
+            </key-property>
+            <key-property name="numericPrecisionRadix" type="serializable">
+                <column name="numeric_precision_radix" />
+            </key-property>
+            <key-property name="numericScale" type="serializable">
+                <column name="numeric_scale" />
+            </key-property>
+            <key-property name="datetimePrecision" type="serializable">
+                <column name="datetime_precision" />
+            </key-property>
+            <key-property name="intervalType" type="serializable">
+                <column name="interval_type" />
+            </key-property>
+            <key-property name="intervalPrecision" type="serializable">
+                <column name="interval_precision" />
+            </key-property>
+            <key-property name="typeUdtCatalog" type="serializable">
+                <column name="type_udt_catalog" />
+            </key-property>
+            <key-property name="typeUdtSchema" type="serializable">
+                <column name="type_udt_schema" />
+            </key-property>
+            <key-property name="typeUdtName" type="serializable">
+                <column name="type_udt_name" />
+            </key-property>
+            <key-property name="scopeCatalog" type="serializable">
+                <column name="scope_catalog" />
+            </key-property>
+            <key-property name="scopeSchema" type="serializable">
+                <column name="scope_schema" />
+            </key-property>
+            <key-property name="scopeName" type="serializable">
+                <column name="scope_name" />
+            </key-property>
+            <key-property name="maximumCardinality" type="serializable">
+                <column name="maximum_cardinality" />
+            </key-property>
+            <key-property name="dtdIdentifier" type="serializable">
+                <column name="dtd_identifier" />
+            </key-property>
+            <key-property name="routineBody" type="serializable">
+                <column name="routine_body" />
+            </key-property>
+            <key-property name="routineDefinition" type="serializable">
+                <column name="routine_definition" />
+            </key-property>
+            <key-property name="externalName" type="serializable">
+                <column name="external_name" />
+            </key-property>
+            <key-property name="externalLanguage" type="serializable">
+                <column name="external_language" />
+            </key-property>
+            <key-property name="parameterStyle" type="serializable">
+                <column name="parameter_style" />
+            </key-property>
+            <key-property name="isDeterministic" type="serializable">
+                <column name="is_deterministic" />
+            </key-property>
+            <key-property name="sqlDataAccess" type="serializable">
+                <column name="sql_data_access" />
+            </key-property>
+            <key-property name="isNullCall" type="serializable">
+                <column name="is_null_call" />
+            </key-property>
+            <key-property name="sqlPath" type="serializable">
+                <column name="sql_path" />
+            </key-property>
+            <key-property name="schemaLevelRoutine" type="serializable">
+                <column name="schema_level_routine" />
+            </key-property>
+            <key-property name="maxDynamicResultSets" type="serializable">
+                <column name="max_dynamic_result_sets" />
+            </key-property>
+            <key-property name="isUserDefinedCast" type="serializable">
+                <column name="is_user_defined_cast" />
+            </key-property>
+            <key-property name="isImplicitlyInvocable" type="serializable">
+                <column name="is_implicitly_invocable" />
+            </key-property>
+            <key-property name="securityType" type="serializable">
+                <column name="security_type" />
+            </key-property>
+            <key-property name="toSqlSpecificCatalog" type="serializable">
+                <column name="to_sql_specific_catalog" />
+            </key-property>
+            <key-property name="toSqlSpecificSchema" type="serializable">
+                <column name="to_sql_specific_schema" />
+            </key-property>
+            <key-property name="toSqlSpecificName" type="serializable">
+                <column name="to_sql_specific_name" />
+            </key-property>
+            <key-property name="asLocator" type="serializable">
+                <column name="as_locator" />
+            </key-property>
+            <key-property name="created" type="serializable">
+                <column name="created" />
+            </key-property>
+            <key-property name="lastAltered" type="serializable">
+                <column name="last_altered" />
+            </key-property>
+            <key-property name="newSavepointLevel" type="serializable">
+                <column name="new_savepoint_level" />
+            </key-property>
+            <key-property name="isUdtDependent" type="serializable">
+                <column name="is_udt_dependent" />
+            </key-property>
+            <key-property name="resultCastFromDataType" type="serializable">
+                <column name="result_cast_from_data_type" />
+            </key-property>
+            <key-property name="resultCastAsLocator" type="serializable">
+                <column name="result_cast_as_locator" />
+            </key-property>
+            <key-property name="resultCastCharMaxLength" type="serializable">
+                <column name="result_cast_char_max_length" />
+            </key-property>
+            <key-property name="resultCastCharOctetLength" type="serializable">
+                <column name="result_cast_char_octet_length" />
+            </key-property>
+            <key-property name="resultCastCharSetCatalog" type="serializable">
+                <column name="result_cast_char_set_catalog" />
+            </key-property>
+            <key-property name="resultCastCharSetSchema" type="serializable">
+                <column name="result_cast_char_set_schema" />
+            </key-property>
+            <key-property name="resultCastCharSetName" type="serializable">
+                <column name="result_cast_char_set_name" />
+            </key-property>
+            <key-property name="resultCastCollationCatalog" type="serializable">
+                <column name="result_cast_collation_catalog" />
+            </key-property>
+            <key-property name="resultCastCollationSchema" type="serializable">
+                <column name="result_cast_collation_schema" />
+            </key-property>
+            <key-property name="resultCastCollationName" type="serializable">
+                <column name="result_cast_collation_name" />
+            </key-property>
+            <key-property name="resultCastNumericPrecision" type="serializable">
+                <column name="result_cast_numeric_precision" />
+            </key-property>
+            <key-property name="resultCastNumericPrecisionRadix" type="serializable">
+                <column name="result_cast_numeric_precision_radix" />
+            </key-property>
+            <key-property name="resultCastNumericScale" type="serializable">
+                <column name="result_cast_numeric_scale" />
+            </key-property>
+            <key-property name="resultCastDatetimePrecision" type="serializable">
+                <column name="result_cast_datetime_precision" />
+            </key-property>
+            <key-property name="resultCastIntervalType" type="serializable">
+                <column name="result_cast_interval_type" />
+            </key-property>
+            <key-property name="resultCastIntervalPrecision" type="serializable">
+                <column name="result_cast_interval_precision" />
+            </key-property>
+            <key-property name="resultCastTypeUdtCatalog" type="serializable">
+                <column name="result_cast_type_udt_catalog" />
+            </key-property>
+            <key-property name="resultCastTypeUdtSchema" type="serializable">
+                <column name="result_cast_type_udt_schema" />
+            </key-property>
+            <key-property name="resultCastTypeUdtName" type="serializable">
+                <column name="result_cast_type_udt_name" />
+            </key-property>
+            <key-property name="resultCastScopeCatalog" type="serializable">
+                <column name="result_cast_scope_catalog" />
+            </key-property>
+            <key-property name="resultCastScopeSchema" type="serializable">
+                <column name="result_cast_scope_schema" />
+            </key-property>
+            <key-property name="resultCastScopeName" type="serializable">
+                <column name="result_cast_scope_name" />
+            </key-property>
+            <key-property name="resultCastMaximumCardinality" type="serializable">
+                <column name="result_cast_maximum_cardinality" />
+            </key-property>
+            <key-property name="resultCastDtdIdentifier" type="serializable">
+                <column name="result_cast_dtd_identifier" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

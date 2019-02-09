@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.ForeignDataWrappers" table="foreign_data_wrappers" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.ForeignDataWrappersId">
+            <key-property name="foreignDataWrapperCatalog" type="serializable">
+                <column name="foreign_data_wrapper_catalog" />
+            </key-property>
+            <key-property name="foreignDataWrapperName" type="serializable">
+                <column name="foreign_data_wrapper_name" />
+            </key-property>
+            <key-property name="authorizationIdentifier" type="serializable">
+                <column name="authorization_identifier" />
+            </key-property>
+            <key-property name="libraryName" type="serializable">
+                <column name="library_name" />
+            </key-property>
+            <key-property name="foreignDataWrapperLanguage" type="serializable">
+                <column name="foreign_data_wrapper_language" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

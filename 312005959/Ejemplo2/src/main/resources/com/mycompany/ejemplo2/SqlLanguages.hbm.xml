@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.SqlLanguages" table="sql_languages" optimistic-lock="version">
+        <composite-id name="id" class="com.mycompany.ejemplo2.SqlLanguagesId">
+            <key-property name="sqlLanguageSource" type="serializable">
+                <column name="sql_language_source" />
+            </key-property>
+            <key-property name="sqlLanguageYear" type="serializable">
+                <column name="sql_language_year" />
+            </key-property>
+            <key-property name="sqlLanguageConformance" type="serializable">
+                <column name="sql_language_conformance" />
+            </key-property>
+            <key-property name="sqlLanguageIntegrity" type="serializable">
+                <column name="sql_language_integrity" />
+            </key-property>
+            <key-property name="sqlLanguageImplementation" type="serializable">
+                <column name="sql_language_implementation" />
+            </key-property>
+            <key-property name="sqlLanguageBindingStyle" type="serializable">
+                <column name="sql_language_binding_style" />
+            </key-property>
+            <key-property name="sqlLanguageProgrammingLanguage" type="serializable">
+                <column name="sql_language_programming_language" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

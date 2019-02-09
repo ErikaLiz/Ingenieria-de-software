@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.InformationSchemaCatalogName" table="information_schema_catalog_name" optimistic-lock="version">
+        <id name="catalogName" type="serializable">
+            <column name="catalog_name" />
+            <generator class="assigned" />
+        </id>
+    </class>
+</hibernate-mapping>
