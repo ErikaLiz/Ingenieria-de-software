@@ -6,7 +6,7 @@
     <class name="com.mycompany.ejemplo2.Usuario" table="usuario" optimistic-lock="version">
         <id name="idusuario" type="int">
             <column name="idusuario" />
-            <generator class="assigned" />
+            <generator class="identity" />
         </id>
         <property name="nombre" type="string">
             <column name="nombre" length="30" />

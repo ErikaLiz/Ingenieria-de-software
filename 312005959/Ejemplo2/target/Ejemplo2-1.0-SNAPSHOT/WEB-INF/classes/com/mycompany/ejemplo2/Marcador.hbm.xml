@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 8, 2019 11:07:42 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.ejemplo2.Marcador" table="marcador" optimistic-lock="version">
+        <id name="idmarcador" type="int">
+            <column name="idmarcador" />
+            <generator class="assigned" />
+        </id>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="30" />
+        </property>
+        <property name="lonitud" type="java.lang.Integer">
+            <column name="lonitud" />
+        </property>
+        <property name="latitus" type="java.lang.Integer">
+            <column name="latitus" />
+        </property>
+    </class>
+</hibernate-mapping>

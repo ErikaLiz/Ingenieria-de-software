@@ -6,7 +6,7 @@
     <class name="com.mycompany.ejemplo2.Marcador" table="marcador" optimistic-lock="version">
         <id name="idmarcador" type="int">
             <column name="idmarcador" />
-            <generator class="assigned" />
+            <generator class="identity" />
         </id>
         <property name="descripcion" type="string">
             <column name="descripcion" length="30" />
